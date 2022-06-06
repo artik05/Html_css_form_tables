@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+
+    <script>
+      function convert() {
+        const inputCurr = document.getElementById("inputCurrency").value;
+        const outputCurr = document.getElementById("outputCurrency");
+
+        if (inputCurr) {
+          outputCurr.value = "Rs " + inputCurr * 80;
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div>
+        <h3>Fill User Registration Form</h3>
+      </div>
+      <form>
+        <div>
+          <label>Name </label>
+          <input type="text" id="name" />
+        </div>
+        <div>
+          <label>Email </label>
+          <input type="email" id="email" />
+        </div>
+        <div>
+          <label>Phone </label>
+          <input type="number" id="phone" />
+        </div>
+        <div>
+          <label>Address </label>
+          <input type="text" id="address" />
+        </div>
+        <div>
+          <label> Password</label>
+          <input type="password" />
+        </div>
+        <div class="btn">
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+    Create a HTML page where there is a table of all IPL teams with their total
+    matches, won, loss, NRR and sortable by points.
+    <div>
+      <h3>IPL Point Table</h3>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Total Matches</th>
+          <th>Won</th>
+          <th>Loss</th>
+          <th>NRR</th>
+          <th>points</th>
+        </tr>
+        <tr>
+          <td>Gujrat lion</td>
+          <td>14</td>
+          <td>11</td>
+          <td>3</td>
+          <td>1.03</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>Mumbai Indians</td>
+          <td>14</td>
+          <td>11</td>
+          <td>3</td>
+          <td>1.03</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>Kings XI</td>
+          <td>14</td>
+          <td>11</td>
+          <td>3</td>
+          <td>1.03</td>
+          <td>22</td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      3. Create a HTML page which allows user to provide input of how many
+      dollars he has, and convert them to rupee using a conversion rate of 80
+      rs/usd.
+      <h3>Currnecy Calculator</h3>
+      <div>
+        <label>Currency(Dollar)</label>
+        <input type="text" id="inputCurrency" />
+      </div>
+      <div>
+        <label>Currency(Indian)</label>
+        <input type="text" id="outputCurrency" />
+      </div>
+      <div>
+        <button onclick="convert()">Convert</button>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
